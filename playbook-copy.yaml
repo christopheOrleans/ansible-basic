@@ -1,0 +1,8 @@
+-
+  name: Copy files on the servers
+  hosts: target1
+  tasks:
+    - name: Execute copy
+      copy:
+        src: /home/osboxes/newfiletocheck
+        dest: /tmp
