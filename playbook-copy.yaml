@@ -1,6 +1,6 @@
 -
   name: Copy files on the servers
-  hosts: ubuntu64Guest:!windows8Server64Guest:!windows*
+  hosts: ubuntu64Guest:!windows8Server64Guest:!windows*:!snb*
   tasks:
     - name: Execute copy
       copy:
