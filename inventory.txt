@@ -1,3 +1,2 @@
 [localhost]
-test ansible_host=10.0.0.198 ansible_ssh_pass=osboxes.org
-target2 ansible_host=10.0.0.114 ansible_ssh_pass=osboxes.org
+tstsirbdd01 ansible_host=172.25.127.113 ansible_ssh_pass=GS3wV96I6Xrbkdo87hZw
