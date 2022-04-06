@@ -1,6 +1,6 @@
 -
   name: Copy files on the servers
-  hosts: target1
+  hosts: all
   tasks:
     - name: Execute copy
       copy:
