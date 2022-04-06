@@ -1,0 +1,8 @@
+-
+  name: Copy files on the servers
+  hosts: ubuntu*:rhel*:cent*:debian*:!windows*:!SNB*:!SPHYNX*:!DMZKOLZEPHIR01
+  tasks:
+    - name: Execute copy
+      copy:
+        src: /home/osboxes/newfiletocheck
+        dest: /tmp
