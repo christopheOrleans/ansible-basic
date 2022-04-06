@@ -6,17 +6,17 @@
   hosts: ubuntu*:!TSTGEC01:!TSTMAARCHWEB01:!rhel*:!cent*:!debian*:!windows*:!SNB*:!SPHYNX*:!DMZKOLZEPHIR01 
   tasks:
     - name: Install system updates for centos systems
-       yum:
-      name: '*'
-     state: latest
+      yum:
+        name: '*'
+        state: latest
         update_cache: yes
       when:
         - ansible_os_family == "RedHat"
         - ansible_distribution == "CentOS"
     - name: Install system updates for ubuntu systems
-       apt:
-      name: '*'
-     state: latest
+      apt:
+        name: '*'
+        state: latest
         update_cache: yes
       when:
         - ansible_os_family == "Debian"
