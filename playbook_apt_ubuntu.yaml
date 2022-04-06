@@ -1,8 +1,14 @@
 -
-  name: Copy files on the servers
-  hosts: ubuntu*:rhel*:cent*:debian*:!windows*:!SNB*:!SPHYNX*:!DMZKOLZEPHIR01
+  name: Test
+  become: yes
+  become_user: root
+  become_method: sudo
+  hosts: ubuntu*:!rhel*:!cent*:!debian*:!windows*:!SNB*:!SPHYNX*:!DMZKOLZEPHIR01
   tasks:
-    - name: Execute copy
-      copy:
-        src: /home/osboxes/newfiletocheck
-        dest: /tmp
+    - name:
+      apt:
+       update_cache: yes
+    - name:
+      command: apt list --upgradable
+      register: updates
+    - debug: var=updates.stdout_lines
