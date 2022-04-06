@@ -11,6 +11,7 @@
         name: '*'
         state: latest
         update_cache: yes
+      become: true
       when:
         - ansible_os_family == "RedHat"
         - ansible_distribution == "CentOS"
