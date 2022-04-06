@@ -1,3 +1,9 @@
+-
+  name: Test
+  become: yes
+  become_user: root
+  become_method: sudo
+  hosts: ubuntu*:!TSTGEC01:!TSTMAARCHWEB01:!rhel*:!cent*:!debian*:!windows*:!SNB*:!SPHYNX*:!DMZKOLZEPHIR01 
  - name: Install system updates for centos systems
       yum:
         name: '*'
