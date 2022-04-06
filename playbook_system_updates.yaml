@@ -11,6 +11,8 @@
         name: '*'
         state: latest
         update_cache: yes
+        update_only: yes
+      register: yum_update_status
       become: true
       when:
         - ansible_os_family == "RedHat"
