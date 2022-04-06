@@ -3,7 +3,7 @@
   become: yes
   become_user: root
   become_method: sudo
-  hosts: ubuntu*!TSTGEC01:!TSTMAARCHWEB01:!rhel*:!cent*:!debian*:!windows*:!SNB*:!SPHYNX*:!DMZKOLZEPHIR01
+  hosts: ubuntu*:!TSTGEC01:!TSTMAARCHWEB01:!rhel*:!cent*:!debian*:!windows*:!SNB*:!SPHYNX*:!DMZKOLZEPHIR01
   tasks:
     - name:
       apt:
