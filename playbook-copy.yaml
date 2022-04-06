@@ -1,6 +1,6 @@
 -
   name: Copy files on the servers
-  hosts: all!badhost
+  hosts: all:!badhost
   tasks:
     - name: Execute copy
       copy:
