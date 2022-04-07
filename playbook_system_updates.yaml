@@ -3,7 +3,7 @@
   become: yes
   become_user: root
   become_method: sudo
-  hosts: ubuntu*:cent*:TSTGEC01:!TSTMAARCHWEB01:!rhel*:!debian*:!windows*:!SNB*:!SPHYNX*:!DMZKOLZEPHIR01
+  hosts: ubuntu*:cent*:!TSTMAARCHWEB01:!rhel*:!debian*:!windows*:!SNB*:!SPHYNX*:!DMZKOLZEPHIR01
   ignore_unreachable: yes
   tasks:
     - name: Install system updates for centos systems
