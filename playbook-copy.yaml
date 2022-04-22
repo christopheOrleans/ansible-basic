@@ -1,6 +1,6 @@
 -
   name: Copy files on the servers
-  hosts: ubuntu*:rhel*:cent*:debian*:!windows*:!SNB*:!SPHYNX*:!DMZKOLZEPHIR01
+  hosts: ubuntu*:rhel*:cent*:debian*:!windows*
   tasks:
     - name: Execute copy
       copy:
