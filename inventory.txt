@@ -1,2 +1,2 @@
 [localhost]
-tstsirbdd01 ansible_host=172.25.127.113 ansible_ssh_pass=GS3wV96I6Xrbkdo87hZw
+tst ansible_host=IP ansible_ssh_pass=xxxxxxxx
